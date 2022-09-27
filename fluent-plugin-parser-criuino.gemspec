@@ -2,14 +2,14 @@ lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name    = "fluent-plugin-parser-cri-uino"
+  spec.name    = "fluent-plugin-parser-criuino"
   spec.version = "0.1.1"
   spec.authors = ["Nicholas"]
   spec.email   = ["lizhongit@gmail.com"]
 
   spec.summary       = %q{CRI log format parser for Fluentd}
   spec.description   = spec.summary
-  spec.homepage      = "https://github.com/fluent/fluent-plugin-parser-cri"
+  spec.homepage      = "https://github.com/lizhongit/fluent-plugin-parser-cri"
   spec.license       = "Apache-2.0"
 
   test_files, files  = `git ls-files -z`.split("\x0").partition do |f|
