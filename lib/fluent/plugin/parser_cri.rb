@@ -19,7 +19,7 @@ require 'fluent/plugin/parser'
 module Fluent
   module Plugin
     class CriParser < Parser
-      Plugin.register_parser("cri", self)
+      Plugin.register_parser("uino-cri", self)
 
       desc 'Merge stream/logtag fields into parsed result'
       config_param :merge_cri_fields, :bool, default: true
@@ -57,7 +57,7 @@ module Fluent
           record = {
             "stream" => elems[1],
             "logtag" => elems[2],
-            "message" => elems[3]
+            "log" => elems[3]
           }
           t = elems[0]
           time = @time_parser.parse(t)
