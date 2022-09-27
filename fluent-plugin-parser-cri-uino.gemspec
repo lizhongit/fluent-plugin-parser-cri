@@ -2,8 +2,8 @@ lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name    = "fluent-plugin-parser-criuino"
-  spec.version = "0.1.1"
+  spec.name    = "fluent-plugin-parser-cri-uino"
+  spec.version = "0.1.2"
   spec.authors = ["Nicholas"]
   spec.email   = ["lizhongit@gmail.com"]
 
